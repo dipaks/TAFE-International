@@ -1,0 +1,244 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Korolev Medium';
+}
+a {
+	display: block;
+	text-decoration: none;
+}
+@font-face {
+	font-family: 'Korolev Heavy';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Heavy'), url('Korolev Heavy.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Thin'), url('Korolev Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Light Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Light Italic'), url('Korolev Light Italic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Light'), url('Korolev Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Medium Italic'), url('Korolev Medium Italic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Medium'), url('Korolev Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Bold'), url('Korolev Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Bold Italic'), url('Korolev Bold Italic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Korolev Heavy Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Korolev Heavy Italic'), url('Korolev Heavy Italic.woff') format('woff');
+}
+#stage {
+	position: absolute;
+	width: 728px;
+	height: 90px;
+	background: #ededed;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+	overflow: hidden;
+	border: 1px #000000 solid;
+}
+#border {
+	z-index: 5999;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+#bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	z-index: 2;
+	left: 0px;
+}
+#logo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+#copy_1 {
+	top: 0px;
+	left: 218px;
+}
+#heroimage {
+	left: 150px;
+	top: 90px;
+	z-index: 999!important;
+}
+#copy_2 {
+	top: -90px;
+	left: 305px;
+	z-index: 9999!important;
+}
+#copyA_b {
+	top: -70px;
+	right: 158px;
+}
+#copy_1, #copy_2, #heroimage {
+	position: absolute;
+}
+#copy_1, #copy_2 {
+	position: absolute;
+	z-index: 99;
+}
+#heroimage {
+	z-index: 9;
+}
+#copyA_a {
+	position: absolute;
+	z-index: 99;
+	top: 13px;
+	clip: rect(0px, 0px, 80px, 0px);
+	left: 438px;
+}
+#copyA_b, #line {
+	position: absolute;
+	z-index: 99;
+}
+#line {
+	position: absolute;
+	z-index: 99;
+	top: 37px;
+	clip: rect(0px, 0px, 80px, 0px);
+	left: 357px;
+}
+#copyA_c {
+	position: absolute;
+	z-index: 99;
+	top: -62px;
+	opacity: 0;
+	left: 310px;
+}
+#copyA_d {
+	position: absolute;
+	z-index: 99;
+	top: 8px;
+	opacity: 0;
+	left: 371px;
+}
+#rto {
+	position: absolute;
+	z-index: 999;
+	top: 76px;
+	opacity: 0;
+	left: 576px;
+	color: #000001;
+}
+#copyA_a, #copyA_b, #copyA_c {
+	color: #000;
+	font-size: 26px;
+	line-height: 30px;
+	width: 240px;
+	text-transform: uppercase;
+	font-family: Korolev Bold;
+}
+#bgimage {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	opacity: 1;
+	z-index: 2;
+	left: 0px;
+}
+#cta {
+	position: absolute;
+	z-index: 99;
+	top: 28px;
+	background: #fff;
+	width: 155px;
+	height: 37px;
+	opacity: 0;
+	left: 357px;
+	text-align: center;
+	font-size: 23px;
+	color: #313131;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 36px;
+}
+#clickLayer {
+	width: 728px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	z-index: 99999;
+	top: 0;
+	cursor: pointer;
+}
+#logo {
+	position: absolute;
+	top: 0;
+	right: -160px;
+	opacity: 0;
+	z-index: 99999;
+}
+#bg_Color {
+	height: 166px;
+	width: 470px;
+	right: -150px;
+	top: 0px;
+	position: absolute;
+	z-index: 99;
+}
+#loading {
+	position: absolute;
+	top: 35px;
+	left: 150px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* this will target only Mac Safari and Chrome browsers */
+#cta {
+	line-height: 35px;
+}
+}
